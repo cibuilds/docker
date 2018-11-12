@@ -5,7 +5,7 @@ FROM cibuilds/base:2018.09
 LABEL maintainer="Ricardo N Feliciano (FelicianoTech) <Ricardo@Feliciano.Tech>"
 
 ENV DOCKER_VERSION=%%DOCKER_VERSION%%
-ENV DOCKER_URL=https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_VERSION}-ce.tgz
+ENV DOCKER_URL=https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_VERSION}.tgz
 ENV COMPOSE_VERSION=1.23.1
 
 
