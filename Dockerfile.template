@@ -6,7 +6,7 @@ LABEL maintainer="Ricardo N Feliciano (FelicianoTech) <Ricardo@Feliciano.Tech>"
 
 ENV DOCKER_VERSION=%%DOCKER_VERSION%%
 ENV DOCKER_URL=https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_VERSION}.tgz
-ENV COMPOSE_VERSION=1.23.1
+ENV COMPOSE_VERSION=1.23.2
 
 
 # The Docker Library version of the images does this so we do too.
