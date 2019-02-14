@@ -1,12 +1,12 @@
 # vim:set ft=dockerfile:
 
-FROM cibuilds/base:2018.09
+FROM cibuilds/base:2019.01
 
 LABEL maintainer="Ricardo N Feliciano (FelicianoTech) <Ricardo@Feliciano.Tech>"
 
-ENV DOCKER_VERSION=18.06.1
-ENV DOCKER_URL=https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_VERSION}-ce.tgz
-ENV COMPOSE_VERSION=1.23.1
+ENV DOCKER_VERSION=18.06.2-ce
+ENV DOCKER_URL=https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_VERSION}.tgz
+ENV COMPOSE_VERSION=1.23.2
 
 
 # The Docker Library version of the images does this so we do too.
