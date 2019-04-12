@@ -16,7 +16,15 @@ RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
 RUN curl -sSL "$DOCKER_URL" | tar -xz --strip-components=1 -C /usr/local/bin
 
 # Install Docker Compose from pip. There's an apk package coming in the future.
-RUN apk --no-cache add py-pip && \
+RUN apk --no-cache add \
+		gcc \
+		libc-dev \
+		libffi-dev \
+		make \
+		openssl-dev \
+		py-pip \
+		python-dev \
+	&& \
 	pip install --upgrade pip && \
 	pip install docker-compose==${COMPOSE_VERSION}
 
