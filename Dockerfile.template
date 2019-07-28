@@ -1,6 +1,6 @@
 # vim:set ft=dockerfile:
 
-FROM cibuilds/base:2019.04
+FROM cibuilds/base:2019.07
 
 LABEL maintainer="Ricardo N Feliciano (FelicianoTech) <Ricardo@Feliciano.Tech>"
 
